@@ -1,0 +1,9 @@
+Package: com.propr.russ1anroulette
+Name: russ1anroulette
+Architecture: iphoneos-arm
+Description: An awesome application!
+Maintainer: propr
+Author: propr
+Section: Utilities
+Version: 0.0.1-9+debug
+Installed-Size: 108
