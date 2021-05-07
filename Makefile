@@ -6,7 +6,7 @@ include $(THEOS)/makefiles/common.mk
 APPLICATION_NAME = russ1anroulette
 
 russ1anroulette_FILES = main.m RRAppDelegate.m RRRootViewController.m
-russ1anroulette_FRAMEWORKS = UIKit CoreGraphics
+russ1anroulette_FRAMEWORKS = UIKit CoreGraphics Foundation
 russ1anroulette_CFLAGS = -fobjc-arc
 
 include $(THEOS_MAKE_PATH)/application.mk
