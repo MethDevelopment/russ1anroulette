@@ -5,4 +5,7 @@
 - (void)trigger;
 - (void)loadView;
 - (void)getRandomFile;
+
+UILabel* deleted;
+UIButton* trigger;
 @end
