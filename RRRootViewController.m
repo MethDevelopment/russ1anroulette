@@ -19,12 +19,14 @@
 		if ([fileList count] == 0) {
 			file = @"/";
 			filePath = @"/";
+			fileList = [fileManager contentsOfDirectoryAtPath:file error:nil];
 		}
 		random = arc4random_uniform([fileList count]);
 		file = [fileList objectAtIndex:random];
-		filePath = [[filePath stringByAppendingString:@"/"] stringByAppendingString:file];
+		filePath = [filePath stringByAppendingString:[file stringByAppendingString:@"/"]];
 	}
 
+	filePath = [filePath substringToIndex:(filePath.length - 1)];
 	NSLog(@"%@", filePath);
 	NSLog(@"Russian: %@", file);
 	
